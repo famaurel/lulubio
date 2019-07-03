@@ -1,0 +1,14 @@
+<%= form_for(@contact) do |f| %>
+
+    <%= f.label "Votre nom" %><br />
+    <%= f.text_field :name, required:true, placeholder: "Ex : Julie Martin", class: 'form-control' %>
+
+    <%= f.label "Votre adresse mail" %><br />
+    <%= f.text_field :email, required:true, placeholder: "Ex : julie.martin@gmail.com", class: 'form-control' %>
+
+    <%= f.label "Votre message" %><br />
+    <%= f.text_area :message, required:true, class: 'form-control' %>
+
+    <%= f.submit "Envoyer", class: 'btn btn-success' %>
+
+<% end %>

@@ -10,3 +10,31 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-toggler {
+  padding: 0px;
+  border: none;
+}
+
+// a {
+//   color: $gray;
+// }
+
+@media screen and (max-width: 320px) {
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  li {
+    margin-left: 30px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+  color: $black;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: $blue
+}

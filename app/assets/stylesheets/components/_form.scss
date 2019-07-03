@@ -1,0 +1,19 @@
+input.btn.btn-success {
+  margin: 10px;
+  color: white;
+}
+
+label {
+  margin-top: 0.5rem;
+}
+
+.form {
+  width: 70%;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    width: 90%;
+  }
+}

@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <h1>Contact</h1>
+</div>
+
+<div class="container contact-container text-center">
+
+  <div class="row map-row">
+    <div class="col-md-6">
+      <p>Le magasin est ouvert du mardi au samedi de 9h à 12h30 et de 14h30 à 19h.</p>
+
+      <p><i class="fas fa-map-marker-alt"></i>55, Grande Rue 47700 Casteljaloux <br></p>
+
+      <p>Vous pouvez nous contacter : </p>
+      <p>
+        <i class="fas fa-phone"></i>  par téléphone au <strong>05 53 94 18 96</strong> <br>
+        <i class="far fa-envelope"></i> par mail à l'adresse <strong>lulubio44@gmail.com</strong> <br>
+        <i class="fas fa-envelope-open-text"></i> grâce au <strong>formulaire de contact</strong> ci-dessous </p>
+    </div>
+
+    <div class="col-md-6">
+      <div id="map";
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
+    </div>
+  </div>
+
+  <div class="form">
+    <%= render 'shared/form' %>
+  </div>
+</div>
+
+<div class="container">
+  <%= link_to "Retour à l'accueil", root_path %>
+</div>
+

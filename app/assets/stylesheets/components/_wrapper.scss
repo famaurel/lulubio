@@ -1,0 +1,27 @@
+.wrapper {
+  height: 200px;
+  text-align: center;
+  background-size: cover;
+  // color: $white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  h1 {
+    margin: auto;
+  }
+  h2 {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    height: 100px;
+  }
+}
+
+
+.atelier-wrapper {
+  position: relative
+}
+

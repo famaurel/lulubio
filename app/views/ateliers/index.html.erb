@@ -1,0 +1,41 @@
+<div class="wrapper atelier-wrapper">
+
+  <h1>Les ateliers à venir</h1>
+
+  <% if user_signed_in? %>
+    <%= link_to "Créer un atelier", new_atelier_path, class:"btn btn-primary btn-create" %>
+  <% end %>
+</div>
+
+<div class="container text-center">
+
+    <% if Atelier.first == nil %>
+      <p>Aucun atelier n'est prévu pour le moment.</p>
+    <% end %>
+
+  <% @ateliers.each do |atelier| %>
+    <div class="atelier-card">
+      <h3><%= atelier.name %></h3>
+      <p><%= l(atelier.date, format: 'Le %-d %B %Y à %Hh%M') %></p>
+      <p><%= atelier.description %></p>
+
+      <% if user_signed_in? %>
+        <div class="row">
+          <div class="col">
+            <%= link_to "Modifier l'atelier", edit_atelier_path(atelier), class:"btn btn-success" %>
+          </div>
+          <div class="col">
+            <%= button_to "Supprimer l'atelier", atelier, :method => :delete, data: { confirm: 'Es-tu sûr(e) de vouloir supprimer cet atelier ?' }, class:"btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <hr>
+  <% end %>
+
+</div>
+
+<div class="container">
+  <br>
+  <%= link_to "Retour à l'accueil", root_path %>
+</div>
