@@ -214,6 +214,7 @@ DEPENDENCIES
   puma
   rails (= 5.2.3)
   rails-i18n
+  rake
   redis
   sassc-rails
   simple_form
