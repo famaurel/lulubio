@@ -17,6 +17,7 @@ class ContactsController < ApplicationController
       flash[:notice] = "Erreur lors de l'envoi du message. Veuillez réessayer."
       render :new
     end
+    @contact.delete
   end
 
   private
