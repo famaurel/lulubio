@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
+  <title>La page que vous cherchez n'existe pas (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   .rails-default-error-page {
@@ -23,7 +23,7 @@
     border-right-color: #999;
     border-left-color: #999;
     border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
+    border-top: #9dc32c solid 4px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     background-color: white;
@@ -32,12 +32,12 @@
   }
 
   .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
+    font-size: 50px;
+    color: #9dc32c;
     line-height: 1.5em;
   }
 
-  .rails-default-error-page div.dialog > p {
+  .rails-default-error-page div.dialog > h4 {
     margin: 0 0 1em;
     padding: 1em;
     background-color: #F7F7F7;
@@ -51,6 +51,16 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
+
+  .rails-default-error-page div.dialog h4 > a {
+    text-decoration: none;
+    color: #28bdef;
+  }
+
+    .rails-default-error-page div.dialog h4 > a:hover {
+    text-decoration: underline;
+  }
+
   </style>
 </head>
 
@@ -58,10 +68,10 @@
   <!-- This file lives in public/404.html -->
   <div class="dialog">
     <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+      <h1>Erreur 404</h1>
+      <p>Cette page n'existe pas ou n'existe plus.</p>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <h4><a href="/">Cliquez ici pour retourner sur la page d'accueil de Lulubio.</a></h4>
   </div>
 </body>
 </html>
