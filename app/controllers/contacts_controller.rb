@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
       ContactsMailer.general_message(@contact).deliver_now
       flash[:notice] = 'Votre message a bien été envoyé !'
       redirect_to root_path
+      ContactsMailer.validation_message(@contact).deliver_now
     else
       flash[:notice] = "Erreur lors de l'envoi du message. Veuillez réessayer."
       render :new
