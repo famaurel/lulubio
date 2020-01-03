@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "presentation", to: 'pages#presentation'
   get "produits", to: 'pages#produits'
   get "construction", to: 'pages#construction'
+  get "mentions", to: 'pages#mentions'
 
   match "/404", to: "errors#not_found", via: :all
   match "/422", to: "errors#unacceptable", via: :all
