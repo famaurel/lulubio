@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <h1>Modifier un panier</h1>
+</div>
+
+<div class="container">
+  <%= form_for(@panier) do |f| %>
+
+    <%= f.label "Contenu du panier" %><br />
+    <%= f.text_field :ingr1, required:true, class: 'form-control' %>
+    <%= f.text_field :ingr2, class: 'form-control' %>
+    <%= f.text_field :ingr3, class: 'form-control' %>
+    <%= f.text_field :ingr4, class: 'form-control' %>
+    <%= f.text_field :ingr5, class: 'form-control' %>
+    <%= f.text_field :ingr6, class: 'form-control' %>
+    <%= f.text_field :ingr7, class: 'form-control' %>
+
+    <%= f.submit "Modifier l'atelier", class: 'btn btn-success' %>
+
+<% end %>
+</div>
