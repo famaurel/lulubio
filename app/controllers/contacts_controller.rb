@@ -8,8 +8,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
-    if @contact.save
-
+    if verify_recaptcha(model: @contact) && @contact.save
       ContactsMailer.general_message(@contact).deliver_now
       flash[:notice] = 'Votre message a bien été envoyé !'
       redirect_to root_path

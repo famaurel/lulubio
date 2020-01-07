@@ -10,6 +10,8 @@
   <%= f.label "Votre message" %><br />
   <%= f.text_area :message, required:true, class: 'form-control' %>
 
+  <%= recaptcha_tags %>
+
   <%= f.submit "Envoyer", class: 'btn btn-success' %>
 
 <% end %>
