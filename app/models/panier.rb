@@ -1,2 +1,0 @@
-class Panier < ApplicationRecord
-end
