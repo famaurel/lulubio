@@ -5,16 +5,13 @@
 <div class="container">
   <%= form_for(@panier) do |f| %>
 
-    <%= f.label "Contenu du panier" %><br />
-    <%= f.text_field :ingr1, required:true, class: 'form-control' %>
-    <%= f.text_field :ingr2, class: 'form-control' %>
-    <%= f.text_field :ingr3, class: 'form-control' %>
-    <%= f.text_field :ingr4, class: 'form-control' %>
-    <%= f.text_field :ingr5, class: 'form-control' %>
-    <%= f.text_field :ingr6, class: 'form-control' %>
-    <%= f.text_field :ingr7, class: 'form-control' %>
+    <%= f.label "Nom du panier" %><br />
+    <%= f.text_field :title, required:true, placeholder: "Ex : panier de la semaine du 12 janvier", class: 'form-control' %>
 
-    <%= f.submit "Modifier l'atelier", class: 'btn btn-success' %>
+    <%= f.label "Contenu du panier" %><br />
+    <%= f.text_area :ingredients, required:true, class: 'form-control' %>
+
+    <%= f.submit "Modifier le panier", class: 'btn btn-success' %>
 
 <% end %>
 </div>

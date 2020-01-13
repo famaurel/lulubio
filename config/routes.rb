@@ -16,4 +16,7 @@ Rails.application.routes.draw do
 
   resources :ateliers, only: [:index, :new, :edit, :create, :update, :destroy]
 
+  resources :paniers, only: [:index, :new, :edit, :create, :update, :destroy]
+
+
 end

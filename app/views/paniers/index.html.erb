@@ -11,19 +11,15 @@
 
 <div class="container text-center">
 
+  <p>Les paniers sont à commander par téléphone avant le mercredi soir, et à venir récupérer du vendredi matin au samedi soir.</p>
+  <p>Prix : 12,50€</p>
     <% if Panier.first == nil %>
       <p>Aucun panier n'est prévu pour le moment.</p>
     <% end %>
 
   <% @paniers.each do |panier| %>
     <div class="panier-card">
-      <p><%= panier.ingr1 %></p>
-      <p><%= panier.ingr2 %></p>
-      <p><%= panier.ingr3 %></p>
-      <p><%= panier.ingr4 %></p>
-      <p><%= panier.ingr5 %></p>
-      <p><%= panier.ingr6 %></p>
-      <p><%= panier.ingr7 %></p>
+      <h4><%= panier.title %></h4>
       <% if user_signed_in? %>
         <div class="row">
           <div class="col">
@@ -34,6 +30,7 @@
           </div>
         </div>
       <% end %>
+      <p><%= panier.ingredients %></p>
     </div>
     <hr>
   <% end %>
