@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <h1>Modifier un panier</h1>
+</div>
+
+<div class="container">
+  <%= form_for(@panier) do |f| %>
+
+    <%= f.label "Nom du panier" %><br />
+    <%= f.text_field :title, required:true, placeholder: "Ex : panier de la semaine du 12 janvier", class: 'form-control' %>
+
+    <%= f.label "Contenu du panier" %><br />
+    <%= f.text_area :ingredients, required:true, class: 'form-control' %>
+
+    <%= f.submit "Modifier le panier", class: 'btn btn-success' %>
+
+<% end %>
+</div>
