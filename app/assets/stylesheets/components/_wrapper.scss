@@ -5,7 +5,9 @@
   // color: $white;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  width: 50%;
+  margin: auto;
   h1 {
     margin: auto;
   }
@@ -19,9 +21,3 @@
     height: 100px;
   }
 }
-
-
-.atelier-wrapper {
-  position: relative
-}
-

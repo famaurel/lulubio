@@ -6,13 +6,17 @@
   height: 60px;
   padding: 0px 30px;
   color: rgba(0,0,0,0.3);
+  bottom: 0px;
+  width: 100%;
 }
+
 .footer-links {
   display: flex;
   align-items: center;
   font-size: 12px;
   color: $white;
 }
+
 .footer-links a {
   text-decoration: none;
   padding: 0px 15px;
@@ -27,6 +31,13 @@
 .footer-links a:hover {
   opacity: 1;
 }
+
 .footer .fa-heart {
   color: #D23333;
+}
+
+.footer-container {
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: -104px;
 }

@@ -4,15 +4,19 @@
   <h1>L'équipe</h1>
 </div>
 
-<div class="container text-center">
-  <%= image_tag "equipe", style:"max-height: 600px;
-    max-width: 100%;
-    margin-bottom: 30px"%>
+<div class="container presentation-container">
+  <div class="row align-items-center">
+    <div class="col-xs-12 col-sm-6", style="text-align: center">
+      <%= image_tag "equipe", style:"max-height: 400px;
+      max-width: 100%;
+      margin-bottom: 30px"%>
+    </div>
 
-  <p>LULUBIO c’est une affaire de famille :</p>
-  <p>Lucie (Lulu), Yann (son mari), et Véronique (sa maman).</p>
-  <p>Nous avons le souhait de découvrir et faire découvrir des produits de qualité, simples et sains. Nous tenons également à vous accueillir et vous conseiller dans la bonne humeur, car pour nous le commerce est avant tout une histoire d’échange et de partage ! </p>
-
-  <%= link_to "Retour à l'accueil", root_path %>
+    <div class="col-xs-12 col-sm-6">
+      <p>LULUBIO c’est une affaire de famille :</p>
+      <p>Lucie (Lulu), Yann (son mari), et Véronique (sa maman).</p>
+      <p>Nous avons le souhait de découvrir et faire découvrir des produits de qualité, simples et sains. Nous tenons également à vous accueillir et vous conseiller dans la bonne humeur, car pour nous le commerce est avant tout une histoire d’échange et de partage ! </p>
+    </div>
+            <%= link_to "Retour à l'accueil", root_path %>
+  </div>
 </div>
-

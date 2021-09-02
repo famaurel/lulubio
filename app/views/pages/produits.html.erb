@@ -6,116 +6,118 @@
 
 
 <div class="container text-center">
-
   <h4>Marques partenaires</h4>
   <br>
-<div class="row product-row">
-  <ul>
-    <li><h6>Produits frais</h6>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
       <ul>
-        <li><a href="#jarres">Les Jarres Crues</a></li>
+        <li><h6>Produits frais</h6>
+          <ul>
+            <li><a href="#jarres">Les Jarres Crues</a></li>
+          </ul>
+        </li>
+        <br>
+        <li><h6>Epicerie sucrée</h6>
+          <ul>
+            <li><a href="#amorine">La Maison d'Amorine</a></li>
+          </ul>
+        </li>
+        <br>
+        <li><h6>Cosmétiques</h6>
+          <ul>
+            <li><a href="#acorelle">Acorelle</a></li>
+          </ul>
+        </li>
+        <br>
       </ul>
-    </li>
-    <br>
-    <li><h6>Epicerie sucrée</h6>
+    </div>
+    <div class="col-xs-12 col-sm-6">
       <ul>
-        <li><a href="#amorine">La Maison d'Amorine</a></li>
+        <li><h6>Bien-être</h6>
+          <ul>
+            <li><a href="#orion">Or*ion</a></li>
+          </ul>
+        </li>
+        <br>
+        <li><h6>Hygiène</h6>
+          <ul>
+            <li><a href="#terremere">Terre mère si...</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <br>
-    <li><h6>Cosmétiques</h6>
-      <ul>
-        <li><a href="#acorelle">Acorelle</a></li>
-      </ul>
-    </li>
-    <br>
-  </ul>
-
-  <ul>
-    <li><h6>Bien-être</h6>
-      <ul>
-        <li><a href="#orion">Or*ion</a></li>
-      </ul>
-    </li>
-    <br>
-    <li><h6>Hygiène</h6>
-      <ul>
-        <li><a href="#terremere">Terre mère si...</a></li>
-      </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
-</div>
 
-<div class="container text-center">
+<div class="container product-container text-center">
   <div id="acorelle">
     <h5>Acorelle</h5>
     <div class="row">
       <div class="col">
-        <%= image_tag "acorelle_eaux", style:"max-width: 200px" %>
+        <%= image_tag "acorelle_eaux", style:"max-width: 200px;" "margin-bottom: 20px;" %>
         <p>Eaux de parfum</p>
       </div>
       <div class="col">
-        <%= image_tag "acorelle_boheme", style:"max-width: 200px" %>
+        <%= image_tag "acorelle_boheme", style:"max-width: 200px;" "margin-bottom: 20px;"%>
         <p>Eau de parfum "La Bohème"</p>
       </div>
       <div class="col">
-        <%= image_tag "acorelle_envoutante", style:"max-width: 200px" %>
+        <%= image_tag "acorelle_envoutante", style:"max-width: 200px;" "margin-bottom: 20px;"%>
         <p>Eau de parfum "L'Envoûtante"</p>
       </div>
     </div>
-
-  <div id="jarres">
-    <h5>Les Jarres Crues</h5>
-    <div class="row">
-      <div class="col">
-      <%= image_tag "jarrecrues_lactofermentes", style:"max-width: 200px" %>
-      <p>Lactofermentés</p>
-      </div>
-    </div>
   </div>
 
-  <div id="amorine">
-    <h5>La Maison d'Amorine</h5>
-    <div class="row">
-      <div class="col">
-      <%= image_tag "amorine_sucettes", style:"max-width: 200px" %>
-      <p>Caramels, sucettes et pâte à tartiner</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="orion">
-    <h5>Or*ion</h5>
-    <div class="row">
-      <div class="col">
-      <%= image_tag "orion_parfums", style:"max-width: 200px" %>
-      <p>Parfums couleur et harmonie</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="terremere">
+      <div id="terremere">
     <h5>Terre mère si...</h5>
     <div class="row">
       <div class="col">
-      <%= image_tag "terremeresi_beewrap", style:"max-width: 200px" %>
+      <%= image_tag "terremeresi_beewrap", style:"max-width: 200px;" "margin-bottom: 20px;"%>
       <p>Bee wrap et éponges zéro déchet</p>
       </div>
       <div class="col">
-      <%= image_tag "terremeresi_bavoirs", style:"max-width: 200px" %>
+      <%= image_tag "terremeresi_bavoirs", style:"max-width: 200px;" "margin-bottom: 20px;"%>
       <p>Bavoirs et essuie-tout lavable</p>
       </div>
       <div class="col">
-      <%= image_tag "terremeresi_oriculis", style:"max-width: 200px" %>
+      <%= image_tag "terremeresi_oriculis", style:"max-width: 200px;" "margin-bottom: 20px;"%>
       <p>Oriculis et lingettes lavables</p>
       </div>
     </div>
-
   </div>
 
+  <div class="row">
+    <div class="col">
+      <div id="jarres">
+        <h5>Les Jarres Crues</h5>
+        <div class="col">
+          <%= image_tag "jarrecrues_lactofermentes", style:"max-width: 200px;" "margin-bottom: 20px;"%>
+          <p>Lactofermentés</p>
+        </div>
+      </div>
+      </div>
+        <div id="amorine">
+          <h5>La Maison d'Amorine</h5>
+        <div class="col">
+          <%= image_tag "amorine_sucettes", style:"max-width: 200px;" "margin-bottom: 20px;"%>
+          <p>Caramels, sucettes et pâte à tartiner</p>
+        </div>
+      </div>
+    <div class="col">
+      <div id="orion">
+        <h5>Or*ion</h5>
+        <div class="col">
+          <%= image_tag "orion_parfums", style:"max-width: 200px;" "margin-bottom: 20px;"%>
+          <p>Parfums couleur et harmonie</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      <br>
+  </div>
 </div>
 
+<div class="container">
   <%= link_to "Retour à l'accueil", root_path %>
 </div>
 
