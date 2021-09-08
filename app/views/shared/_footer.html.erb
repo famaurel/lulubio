@@ -1,7 +1,12 @@
 <div class="footer">
   <div class="footer-links">
-    <p>© 2019 - 2020 Lulubio - Tous droits réservés</p>
-    <a> <%= link_to "Mentions légales", mentions_path %></a>
-    <a target="_blank" href="https://www.facebook.com/lulubio47/"><i class="fab fa-facebook"></i></a>
+    <div class="footer-left">
+      <p>© 2019 - <span id="year"><%= Date.today.year %></span> Lulubio - Tous droits réservés</p>
+      <a><p><%= link_to "Mentions légales", mentions_path %></p></a>
+    </div>
+    <div class="footer-right">
+      <a target="blank" href="https://fannymaurel.com"><p>Webdesign & SEO : Fanny Maurel</p></a>
+      <a target="_blank" href="https://www.facebook.com/lulubio47/"><i class="fab fa-facebook" style="font-size: 30px"></i></a>
+    </div>
   </div>
 </div>

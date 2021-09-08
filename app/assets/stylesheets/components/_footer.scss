@@ -15,17 +15,21 @@
   align-items: center;
   font-size: 12px;
   color: $white;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-links a {
   text-decoration: none;
-  padding: 0px 15px;
   color: $white;
 }
 
 .footer-links p {
-  padding: 0px 15px;
-  margin: 0px;
+  margin: 0px 15px;
+}
+
+.footer-links i {
+  margin: 0px 15px;
 }
 
 .footer-links a:hover {
@@ -40,4 +44,14 @@
   min-height: 100vh;
   position: relative;
   margin-bottom: -104px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
 }
